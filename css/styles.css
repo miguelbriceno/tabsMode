@@ -33,11 +33,14 @@ section .menu a.activeMenu{
 
 section .articles{
   background-color: #C1F8CF;
-  visibility: hidden;
+}
+
+section .articles article{
+  display: none;
 }
 
 section article.onTop{
-  visibility: visible;
+  display: block;
   background-color: #9AD0EC;
   padding: 3vw;
 }
