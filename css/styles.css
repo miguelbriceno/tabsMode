@@ -1,5 +1,59 @@
 /* The CSS file is organized from top to bottom
 elemnts in the HTML file. */
 body {
-  background-color: #11468F;
+  background-color: #D3E4CD;
+  font-size: 2vw;
+}
+
+section {
+  border-style: solid;
+  border-color: #99A799;
+  border-radius: 10px;
+  margin: 2vw 3vw;
+}
+
+section .navbar, .container-fluid{
+  padding: 0;
+}
+
+section .menu{
+  background-color: #F4FCD9;
+  display: flex;
+}
+
+section .menu a{
+  color: #42C2FF;
+  text-decoration: none;
+  padding: 2vw 4vw;
+}
+
+section .menu a.activeMenu{
+  background-color: #85F4FF;
+}
+
+section .articles{
+  background-color: #C1F8CF;
+  visibility: hidden;
+}
+
+section article.onTop{
+  visibility: visible;
+  background-color: #9AD0EC;
+  padding: 3vw;
+}
+
+section .articles h3{
+  padding-top: 3vw;
+  padding-bottom: 2vw;
+}
+
+section .articles p{
+  text-align: justify;
+  padding: 1vw auto;
+}
+
+@media screen and (max-width: 900px) {
+  body{
+    font-size: 5vw;
+  }
 }
